@@ -1,0 +1,7 @@
+<h1>Inscripción al curso</h1>
+<p>Asignaturas seleccionadas:</p>
+@for (asignatura of asignaturasSeleccionadas; track $index) {
+    <ol>{{asignatura}}</ol>
+}
+
+<app-asignaturas (emitter)="addAsignaturas($event)"></app-asignaturas>
